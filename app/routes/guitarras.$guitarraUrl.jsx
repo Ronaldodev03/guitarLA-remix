@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 
 /* for consuming tha data in the component we use useLoaderData */
 /* for consuming tha context in the component we use useOuletContex */
-import {useLoaderData, useOutletContext} from "@remix-run/react"
+import {Link, useLoaderData, useOutletContext} from "@remix-run/react"
 
 /* importing function for getting data */
 import { getGuitarra } from "../models/guitarras.server"
@@ -143,7 +143,9 @@ const Guitarra = () => {
               <p>
                 Guitarra añadida al carrito
               </p>
+              <Link to="/carrito">
               <img src={carrito} alt="imagen carrito" />
+              </Link>
             </div>}
           </div>
       </main>
