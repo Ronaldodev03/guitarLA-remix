@@ -9,8 +9,11 @@ import styles from "../styles/blog.css"
 export function meta(){
   return([{
     title: "GuitarLA - Nuestro Blog",
-    description:"GuitarLA, blog de musica y venta de guitarras",
-  }])
+  },
+  {
+    name:"description",
+    content:"GuitarLA, blog de musica y venta de guitarras",
+}])
   }
 
 /* function for styles */

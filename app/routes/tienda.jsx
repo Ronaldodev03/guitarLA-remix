@@ -9,7 +9,9 @@ import styles from "../styles/guitarras.css"
 export function meta(){
   return([{
     title: "GuitarLA - Tienda de Guitarras",
-    description:"Nuestra colección de guitarras",
+  },{
+    name:"description",
+    content:"Nuestra colección de guitarras",
   }])
   }
 

@@ -19,8 +19,11 @@ export function meta({data}){
   if(!data){
     return([{
        title: "GuitarLA - Entrada no encontrada",
-       description:"Guitarras, venta de guitarras, guitarra no encontrada",
-    }])
+      },
+      {
+        name:"description",
+        content:"Guitarras, venta de guitarras, guitarra no encontrada",
+  }])
   }
 
   return([{

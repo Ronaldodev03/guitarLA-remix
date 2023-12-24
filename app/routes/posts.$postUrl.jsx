@@ -16,7 +16,10 @@ import { formatearFecha } from "../utils/helpers"
   if(!data){
     return{
        title: "GuitarLA - Entrada no encontrada",
-       description:"Guitarras, venta de guitarras, entrada no encontrada",
+      },
+      {
+        name:"description",
+        content:"Guitarras, venta de guitarras, entrada no encontrada",
     }
   }
 

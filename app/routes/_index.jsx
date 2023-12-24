@@ -18,7 +18,10 @@ import Curso from "../components/curso"
 export function meta(){
   return([{
     title: "GuitarLA - Inicio",
-    description:"Venta de guitarras, blog de música",
+  },
+  {
+    name:"description",
+    content:"Venta de guitarras, blog de música",
   }])
   }
 

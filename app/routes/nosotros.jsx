@@ -6,8 +6,11 @@ import styles from "../styles/nosotros.css"
 export function meta(){
   return([{
     title: "GuitarLA - Sobre Nosotros",
-    description:"Venta de guitarras, blog de música",
-  }])
+  },
+  {
+    name:"description",
+    content:"Venta de guitarras, blog de música",
+}])
   }
 
 /* function for styles */

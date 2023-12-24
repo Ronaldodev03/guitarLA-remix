@@ -11,7 +11,10 @@ import { ClientOnly } from "remix-utils/client-only";
 export function meta(){
   return([{
     title: "GuitarLA - Carrito de Compras",
-    description:"Venta de guitarras, música,  blog, carrito de compras",
+  },
+  {
+    name:"description",
+    content:"Venta de guitarras, música,  blog, carrito de compras",
   }])
   }
 
