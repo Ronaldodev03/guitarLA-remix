@@ -1,44 +1,43 @@
-import { Link, useLocation } from "@remix-run/react"
-import imagen from "../../public/img/carrito.png"
+import { Link, useLocation, useNavigation } from "@remix-run/react";
+import imagen from "../../public/img/carrito.png";
 
 const Navegacion = () => {
-    
-const location = useLocation()
+  const location = useLocation();
+
+  const navigation = useNavigation();
+  console.log(navigation);
 
   return (
     <nav className="navegacion">
-    <Link 
-    to="/"
-    className={location.pathname==="/" ? "active" : ""}
-    >
-        Inicio
-    </Link>
-    <Link 
-    to="/nosotros"
-    className={location.pathname==="/nosotros" ? "active" : ""}
-    >
+      <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+        Inicio {navigation.location?.pathname === "/" && <div>...</div>}
+      </Link>
+      <Link
+        to="/nosotros"
+        className={location.pathname === "/nosotros" ? "active" : ""}
+      >
         Nosotros
-    </Link>
-    <Link 
-    to="/tienda"
-    className={location.pathname==="/tienda" ? "active" : ""}
-    >
+      </Link>
+      <Link
+        to="/tienda"
+        className={location.pathname === "/tienda" ? "active" : ""}
+      >
         Tienda
-    </Link>
-    <Link 
-    to="/blog"
-    className={location.pathname==="/blog" ? "active" : ""}
-    >
+      </Link>
+      <Link
+        to="/blog"
+        className={location.pathname === "/blog" ? "active" : ""}
+      >
         Blog
-    </Link>
-    <Link 
-    to="/carrito"
-    className={location.pathname==="/carrito" ? "active" : ""}
-    >
+      </Link>
+      <Link
+        to="/carrito"
+        className={location.pathname === "/carrito" ? "active" : ""}
+      >
         <img src={imagen} alt="imagen carrito" />
-    </Link>
-</nav>
-  )
-}
+      </Link>
+    </nav>
+  );
+};
 
-export default Navegacion
+export default Navegacion;

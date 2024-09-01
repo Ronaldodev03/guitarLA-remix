@@ -1,8 +1,10 @@
 /* .server => will only execute in the server */
+import { curso } from "../data";
 
 /* function for getting data */
-export async function getCurso(){``
-    try {
+export async function getCurso() {
+  return curso;
+  /*   try {
         const respuesta = await fetch(`${process.env.API_URL}/curso?populate=imagen`);
         if (!respuesta.ok) {
           throw new Error(`HTTP error! Status: ${respuesta.status}`);
@@ -12,5 +14,5 @@ export async function getCurso(){``
       } catch (error) {
         console.error("Error fetching data:", error);
         return { error: "Error fetching data" };
-      }
+      } */
 }
