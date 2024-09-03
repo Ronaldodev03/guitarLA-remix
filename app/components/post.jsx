@@ -10,7 +10,6 @@ const Post = ({ post }) => {
     fecha, //publishedAt
   } = post;
   //const fecha = formatearFecha(publishedAt);
-  console.log(post);
   return (
     <article className="post">
       <img className="imagen" src={imagen} alt={`imagen blog ${titulo}`} />

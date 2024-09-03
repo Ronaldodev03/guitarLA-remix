@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import Post from "./post";
 const ListadoPosts = ({ posts }) => {
-  console.log(posts);
   return (
     <>
       <h2 className=" heading">Blog</h2>
